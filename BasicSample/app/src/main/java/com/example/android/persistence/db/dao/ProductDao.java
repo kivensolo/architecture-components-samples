@@ -39,6 +39,9 @@ public interface ProductDao {
     @Query("select * from products where id = :productId")
     ProductEntity loadProductSync(int productId);
 
+    /**
+     * TODO Deal it
+     */
     @Query("SELECT products.* FROM products JOIN productsFts ON (products.id = productsFts.rowid) "
         + "WHERE productsFts MATCH :query")
     LiveData<List<ProductEntity>> searchAllProducts(String query);

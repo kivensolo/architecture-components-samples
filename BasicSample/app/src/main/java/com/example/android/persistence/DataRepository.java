@@ -43,6 +43,7 @@ public class DataRepository {
 
     /**
      * Get the list of products from the database and get notified when the data changes.
+     * 从数据库获取产品列表，并在数据更改时获得通知
      */
     public LiveData<List<ProductEntity>> getProducts() {
         return mObservableProducts;

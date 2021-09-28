@@ -19,6 +19,9 @@ package com.example.android.persistence.db.entity;
 import androidx.room.Entity;
 import androidx.room.Fts4;
 
+/**
+ * FTS相关：<a href="https://www.sqlite.org/fts3.html">FTS3 and FTS4</a>
+ */
 @Entity(tableName = "productsFts")
 @Fts4(contentEntity = ProductEntity.class)
 public class ProductFtsEntity {
